@@ -1,4 +1,7 @@
 # (sid):(dc):(wan_ip):(host_name):(lan_ip):(role1,role2):(price):
 #
 # Server in Dallas, Texas
-XEN-953:DFW:192.0.95.3:vnsavage.gm.a8c.com:192.168.95.3:nginx-base,nginx-php,mysql-base:0:
+G4-WEB1:DFW:192.0.95.33:web1.g4.gm.a8c.com:192.168.95.33:nginx-base,nginx-php:0:
+G4-WEB2:DFW:192.0.95.35:web2.g4.gm.a8c.com:192.168.95.35:nginx-base,nginx-php:0:
+G4-DB1:DFW:192.0.95.34:db1.g4.gm.a8c.com:192.168.95.34:mysql-base:0:
+G4-DB2:DFW:192.0.95.36:db2.g4.gm.a8c.com:192.168.95.36:mysql-base:0:
