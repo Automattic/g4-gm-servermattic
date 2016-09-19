@@ -1,8 +1,8 @@
 #!/bin/bash
 if hostname | grep -q db1; then 
-	DB=1; 
+	DB=0; 
 else 
-	DB=2
+	DB=1
 fi
 
 ln -sf /etc/mysql-initscripts/mysql-5.6 /etc/init.d/mysql1-${DB}
