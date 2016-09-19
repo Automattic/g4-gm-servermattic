@@ -13,7 +13,7 @@ PATH=$PATH:/usr/local/mysql/bin/
 mkdir -p /var/log/mysql1-${DB}
 chown mysql.mysql /var/log/mysql1-${DB}
 cd /usr/local/mysql5.6/
-./scripts/mysql_install_db --defaults-file=/etc/mysql/mysql1-${DB}.cnf --user=mysql --datadir=/var/lib/mysql1-0 --force  --skip-name-resolve
+./scripts/mysql_install_db --defaults-file=/etc/mysql/mysql1-${DB}.cnf --user=mysql --datadir=/var/lib/mysql1-1 --force  --skip-name-resolve
 chown -R mysql.mysql /var/lib/mysql1-${DB}
 /etc/init.d/mysql1-${DB} start
 /usr/local/mysql/bin/mysqladmin --defaults-file=/etc/mysql/mysql1-${DB}.cnf -u root password 'god'
