@@ -24,6 +24,6 @@ mysql --defaults-file=/etc/mysql/mysql1-${DB}.cnf -u root -sN  -pgod -e "CREATE 
 
 if [ $DB -eq 1 ]; then
  mysql --defaults-file=/etc/mysql/mysql1-${DB}.cnf -u root -sN  -pgod -e 'CHANGE MASTER TO MASTER_HOST="db1.g4.gm.a8c.com", MASTER_USER="g4gmwp", MASTER_PASSWORD="wannabesysadmin", MASTER_PORT=3306';
- mysql --defaults-file=/etc/mysql/mysql1-${DB}.cnf -u root -sN  -pgod -e 'START SALVE'
+ mysql --defaults-file=/etc/mysql/mysql1-${DB}.cnf -u root -sN  -pgod -e 'START SLAVE'
 fi
 
